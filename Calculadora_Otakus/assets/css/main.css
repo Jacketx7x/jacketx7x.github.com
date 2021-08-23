@@ -1,0 +1,297 @@
+*{
+    font-family: 'Roboto', sans-serif, Verdana;
+}
+body{
+    background: url(/Calculadora_Otakus/assets/imagenes/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.grilla{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: minmax(120px, auto) repeat(4, 150px);
+    
+    
+}
+.grilla > button{
+    
+    cursor: pointer;
+    font-size: 3rem;
+    margin: 1px;
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+
+
+    
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
+}
+.grilla > button:hover{
+    opacity: 0.7;
+    transition: 0.09s;
+}
+.output{
+    grid-column: 1 / -1;
+    background-color: rgb(126, 242, 255);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 8px;
+    margin: 1px;
+    margin-bottom:3px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: white solid 2px;
+}
+.output .display{
+    font-size: 1.85rem;
+    text-align: right;
+    color: black;
+}
+
+
+@media (max-width: 700px){
+    
+    .grilla{
+        grid-template-columns: repeat(3, 110px)  ;
+        grid-template-rows: 100px repeat(6, 90px);
+        opacity: 0.8;
+        
+    }
+    .grilla > button{
+        color: rgba(0, 0, 0, 0.836);
+        -webkit-text-stroke: 0.05rem rgba(255, 255, 255, 0);
+
+    }
+    .display{
+        width: 90%;
+    }
+    body{
+        background: url(/Calculadora_Otakus/assets/imagenes/Background_responsip.webp);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton10{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .boton11{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .boton12{
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .boton06{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .boton07{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .boton08{
+        grid-column: 3;
+        grid-row: 3;
+    }
+    .boton02{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .boton03{
+        grid-column: 2;
+        grid-row: 4;
+    }
+    .boton04{
+        grid-column: 3;
+        grid-row: 4;
+    }
+    .boton15{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .boton14{
+        grid-column: 1;
+        grid-row: 6;
+    }
+    .boton16{
+        grid-column:1/4;
+        grid-row: 7;
+    }
+
+}
+
+
+@media (min-width: 701px){
+    .boton01{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_overflow.jpg);
+        background-position:inherit;
+        background-size: cover;
+    }
+    .boton02{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_charlotte.jpg);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton03{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_coneja.jpg);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton04{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_megumin.jpg);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton05{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_miku.jpg);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton06{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_rosa.jpg);
+        background-position:initial;
+        background-size: cover;
+    }
+    .boton07{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_mirai_kurillama.jpg);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton08{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_parche.webp);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton09{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_Nezuko.jpg);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton10{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_do.jpg);
+        background-position:initial;
+        background-size: cover;
+    }
+    .boton11{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_nayeoon.jpg);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton12{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_mirai_kurillama2.jpg);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton13{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_Jong.jpg);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton14{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_nayeoon.jpg);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton15{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_Nayeon.jpg);
+        background-position:center;
+        background-size: cover;
+    }
+    .boton16{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_kim.jpg);
+        background-position:initial;
+        background-size: cover;
+    }
+    .boton14{
+        background: url(/Calculadora_Otakus/assets/imagenes/W_kim2.jpg);
+        background-position:center;
+        background-size: cover;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+/*
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-he 100vh;
+    
+    background:url(../imagenes/Background.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 6em);
+    grid-template-rows: 7em repeat(5, 8em);
+    background: #4cb8c4;  fallback for old browsers 
+    background: -webkit-linear-gradient(to bottom, #3CD3AD, #4CB8C4);  
+    background: linear-gradient(to bottom, #3CD3AD, #4CB8C4);  
+    border-radius: 8px;
+    border:rgba(0, 0, 0, 0.262) solid 10px;
+    
+    box-shadow: rgba(0, 0, 0, 0.386) 4px 6px;
+    
+}
+button{
+    background:url(/Calculadora_Otakus/assets/imagenes/W_charlotte.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    align-items: center;
+    background-size: cover;
+    margin: 5px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.614) 5px 5px 10px -3px;
+}
+.col-2{
+    grid-column: span 2 ;
+}
+span{
+    display: flex;
+    background: rgba(255, 255, 255, 0.641);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: solid 2px rgba(0, 0, 0, 0.551) ;
+}
+button:active{
+    opacity: 0.8;
+}
+.display{
+
+}
+ */
